@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum OperationProto {
+    CREATE_NODE = 0;
+    INSERT_NODE = 1;
+    UPDATE_NODE = 2;
+    SELECT_NODE = 3;
+    DELETE_NODE = 4;
+    CREATE_ENTITY = 5;
+    DELETE_ENTITY = 6;
+}

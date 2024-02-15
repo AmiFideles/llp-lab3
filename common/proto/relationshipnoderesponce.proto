@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "simplenode.proto";
+import "propertyresponce.proto";
+
+message RelationshipNodeResponce {
+    required string relation_type = 1;
+    optional SimpleNodeMessage node = 2;
+    optional PropertyResponce property = 3;
+}

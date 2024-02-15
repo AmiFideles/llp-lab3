@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "valuetype.proto";
+
+message PropertyResponce {
+    required ValueTypeProto value_type = 1;
+    required string type = 2;
+    required string value = 3;
+}

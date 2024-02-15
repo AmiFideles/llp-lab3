@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+import "operation.proto";
+import "filter.proto";
+import "entity.proto";
+import "node.proto";
+import "relationship.proto";
+import "property.proto";
+import "typeelement.proto";
+import "iterator.proto";
+
+message RequestMessage {
+    required OperationProto operation = 1;
+    required TypeOfElementProto type = 2;
+    optional FilterMessage filter = 3;
+    
+    optional EntityMessage entity = 4;
+    optional NodeMessage node = 5;
+    optional RelationshipMessage relationship = 6;
+    optional PropertyMessage property = 7;
+
+    repeated string relationships = 8;
+    repeated string properties = 9;
+
+    optional IteratorMessage iterator = 10;
+}

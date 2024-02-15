@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "relationshipnoderesponce.proto";
+import "simplenode.proto";
+import "propertyresponce.proto";
+
+message NodeResponce {
+    required SimpleNodeMessage simple_node = 1;
+    repeated RelationshipNodeResponce relationships = 2;
+    repeated PropertyResponce properties = 3;
+}

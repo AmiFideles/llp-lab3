@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message IteratorMessage {
+    required uint32 offset = 1;
+    required uint32 read_block = 2;
+}

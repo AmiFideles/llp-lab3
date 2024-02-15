@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "valuetype.proto";
+
+message PropertyMessage {
+    required ValueTypeProto value_type = 1;
+    required int32 subject_id = 2;
+    required string type = 3;
+    required string subject_type = 4;
+    required string value = 5;
+}

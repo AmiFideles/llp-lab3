@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RelationshipMessage {
+    required int32 parent_id = 1;
+    required int32 child_id = 2;
+    required string type = 3;
+    required string parent_type = 4;
+    required string child_type = 5;
+}

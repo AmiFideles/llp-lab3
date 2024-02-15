@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+enum FieldProto {
+    ID = 0;
+    NAME = 1;
+    VALUE = 2;
+    TYPE = 3;
+}
+
+enum CompareTypeProto {
+    GREATER = 0;
+    LOWER = 1;
+    EQUAL = 2;
+    NOT_EQUAL = 3;
+    ALL = 4;
+}
+
+message FilterMessage {
+    required FieldProto field = 1;
+    optional string value = 2;
+    required CompareTypeProto type = 3;
+    optional string type_element = 4;
+}

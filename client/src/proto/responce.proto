@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "iterator.proto";
+import "noderesponce.proto";
+
+message ResponceMessage {
+    required int32 status = 1;
+    required string message = 2;
+    optional NodeResponce node = 3;
+    optional IteratorMessage iterator = 4;
+}
